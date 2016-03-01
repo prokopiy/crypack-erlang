@@ -1,11 +1,11 @@
--module(cryPack_tests).
+-module(crypack_tests).
 -include_lib("eunit/include/eunit.hrl").
 
 
 basic_test_(V) ->
   fun () ->
-    E = cryPack:encode(V),
-    {ok, D, _} = cryPack:decode(E),
+    E = crypack:encode(V),
+    {ok, D, _} = crypack:decode(E),
     ?assertEqual(V, D)
   end.
 

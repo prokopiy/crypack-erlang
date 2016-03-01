@@ -1,12 +1,14 @@
 {application, crypack,
  [
-  {description, ""},
-  {vsn, "1"},
+  {description, "An Erlang crypack library"},
+  {vsn, "0.0.1"},
+  {modules, [
+             crypack
+            ]},
   {registered, []},
   {applications, [
                   kernel,
                   stdlib
                  ]},
-  {mod, { crypack_app, []}},
   {env, []}
  ]}.
