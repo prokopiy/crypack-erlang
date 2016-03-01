@@ -1,0 +1,12 @@
+{application, crypack,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { crypack_app, []}},
+  {env, []}
+ ]}.

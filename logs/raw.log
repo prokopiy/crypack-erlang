@@ -1,0 +1,19 @@
+--- Test run on 2016/02/29 23:04:08 ---
+Converting "d:/prokopiy/cryPack/erlang/." to "d:/prokopiy/cryPack/erlang" and re-inserting with add_patha/1
+
+
+Common Test v1.11 starting (cwd is D:/prokopiy/cryPack/erlang)
+
+
+Common Test: Running make in test directories...
+
+CWD set to: "d:/prokopiy/cryPack/erlang/logs/ct_run.test@DESKTOP-BNVCBGL.2016-02-29_23.04.08"
+
+TEST INFO: 1 test(s), 1 case(s) in 1 suite(s)
+
+Testing cryPack.erlang: Starting test, 1 test cases
+Testing cryPack.erlang: TEST COMPLETE, 1 ok, 0 failed of 1 test cases
+
+Updating d:/prokopiy/cryPack/erlang/logs/index.html... done
+Updating d:/prokopiy/cryPack/erlang/logs/all_runs.html... done
+
