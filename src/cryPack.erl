@@ -15,6 +15,7 @@
 -export([decode/1, decode_map/1, encode/1]).
 
 -define(CRYPACK_NULL,       16#01).
+-define(CRYPACK_UNDEFINED,  16#02).
 -define(CRYPACK_BOOL_FALSE, 16#10).
 -define(CRYPACK_BOOL_TRUE,  16#11).
 -define(CRYPACK_INTEGER,    16#80).
@@ -22,12 +23,15 @@
 -define(CRYPACK_STRING_8,   16#A1).
 -define(CRYPACK_STRING_16,  16#A2).
 -define(CRYPACK_STRING_32,  16#A3).
+-define(CRYPACK_STRING_64,  16#A4).
 -define(CRYPACK_ARRAY_8,    16#B1).
 -define(CRYPACK_ARRAY_16,   16#B2).
 -define(CRYPACK_ARRAY_32,   16#B3).
+-define(CRYPACK_ARRAY_64,   16#B4).
 -define(CRYPACK_MAP_8,      16#C1).
 -define(CRYPACK_MAP_16,     16#C2).
 -define(CRYPACK_MAP_32,     16#C3).
+-define(CRYPACK_MAP_64,     16#C4).
 
 decode(Data) ->
   <<T:8/integer, R/binary>> = Data,
