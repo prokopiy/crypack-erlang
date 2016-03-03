@@ -40,6 +40,7 @@ decode(Data) ->
     ?CRYPACK_NULL ->
       {ok, [], R};
     ?CRYPACK_BOOL_FALSE ->
+
       {ok, false, R};
     ?CRYPACK_BOOL_TRUE ->
       {ok, true, R};
