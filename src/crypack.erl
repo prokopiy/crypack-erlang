@@ -10,7 +10,7 @@
 -module(crypack).
 -author("Прокопий").
 
-%% API
+%% API 111
 
 -export([decode/1, decode_map/1, encode/1]).
 
