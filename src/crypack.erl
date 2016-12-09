@@ -33,6 +33,9 @@
 -define(CRYPACK_MAP_32,     16#C3).
 -define(CRYPACK_MAP_64,     16#C4).
 
+%% binary_to_integer/1
+-spec decode(Data) -> term() when
+      Data :: binary().
 decode(Data) ->
   <<T:8/integer, R/binary>> = Data,
     io:format("decode: T=~w, R=~w~n", [T,R]),
