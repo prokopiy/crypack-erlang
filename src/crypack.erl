@@ -10,7 +10,7 @@
 -module(crypack).
 -author("Прокопий").
 
-%% API 111
+%% API
 
 -export([decode/1, decode_map/1, encode/1]).
 
@@ -34,7 +34,7 @@
 -define(CRYPACK_MAP_64,     16#C4).
 
 %% binary_to_integer/1
--spec decode(Data) -> term() when
+-spec decode(Data) -> term() when 
       Data :: binary().
 decode(Data) ->
   <<T:8/integer, R/binary>> = Data,
@@ -120,7 +120,7 @@ encode_key_value(Key, Value) ->
 
 
 decode_integer(Data) ->
-  <<R:8/big-signed-integer-unit:8, Rest/binary>> = Data,
+    <<R:8/big-signed-integer-unit:8, Rest/binary>> = Data,
   {ok, R, Rest}.
 
 decode_float(Data) ->
