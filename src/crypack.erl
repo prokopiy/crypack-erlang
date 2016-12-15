@@ -14,6 +14,8 @@
 
 -export([decode/1, decode_map/1, encode/1]).
 
+
+
 -define(CRYPACK_NULL,       16#01).
 -define(CRYPACK_UNDEFINED,  16#02).
 -define(CRYPACK_BOOL_FALSE, 16#10).
